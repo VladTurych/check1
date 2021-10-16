@@ -1329,8 +1329,10 @@ nav {
 
 .accordion-button:not(.collapsed)::after {
   background: #86ff3b;
-  -webkit-box-shadow: 0px 0px  0px 4px #333, 0px 0px 0px 6px #86ff3b;
-          box-shadow: 0px 0px  0px 4px #333, 0px 0px 0px 6px #86ff3b;
+  -webkit-box-shadow: 0px 0px  0px 4px #333,
+ 0px 0px 0px 6px #86ff3b;
+          box-shadow: 0px 0px  0px 4px #333,
+ 0px 0px 0px 6px #86ff3b;
 }
 
 .accordion-button:focus {
@@ -1968,6 +1970,73 @@ nav {
 }
 
 /************ FOOTER END *****************/
+.pace {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 3px;
+  overflow: hidden;
+  background: #1E1E1E;
+}
+
+.pace .pace-progress {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: #888;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader {
+  width: 100%;
+  height: 100%;
+  background: #121417;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 999;
+}
+
+.p {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ddd;
+  font-weight: 500;
+  font-family: 'Kanit', sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+
 @media only screen and (max-width: 840px) {
   .nav-content__links {
     display: none;
